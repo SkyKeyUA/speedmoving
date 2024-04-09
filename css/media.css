@@ -1,0 +1,600 @@
+@media screen and (max-width:1600px) {
+    .logo-header{
+        max-width: 200px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    .max-content-us{
+        padding: 180px 0;
+    }
+    .our-services{
+        padding: 120px 0 0 ;
+    }
+    .social-links a{
+        width: 46px;
+        height: 46px;
+        background-size: contain;
+    }
+    .social-links li{
+        width: 46px;
+    }
+    .our-services-select h5{
+        font-size: 28px;
+    }
+    .our-services-select>div>div{
+        height: 101px;
+        width: 280px;
+    }
+    .our-services-select ul{
+        width: 280px;
+    }
+    .our-services>ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .our-services>ul li{
+        width: 23%;
+    }
+    .truck-size-items>div h3{
+        font-size: 37.04px;
+        padding: 17px 17px 17px 28px;
+        max-width: 400px;
+    }
+    .truck-size-items>div h3{
+        margin-top: 70px;
+    }
+    .services-include li div img{
+        width: 30%;
+        display: block;
+       
+    }
+    .services-include li div{
+         height: 120px;
+    }
+    .services-include li p{
+        font-size: 18px;
+    }
+    .services-include h3{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    .block-speed h2::before{
+        width: 90px;
+        height: 90px;
+    }
+    .form-container h2{
+        font-size: 42px;
+    }
+    .social-links{
+        width: 65px;
+    }
+    .social-links.hidden{
+        right: -50px;
+    }
+    .social-links{
+        top: calc(50% - 170px);
+    }
+    .title-bg h2{
+        font-size: 50px;
+    }
+    .title-bg h2::before {
+        width: 90px;
+        height: 90px;
+    }
+    .page .nav-items{
+        top: calc(100% + 45px);
+    }
+    .truck-size-box-info>span{
+        font-size: 50px;
+    }
+    .truck-size-box-info>p{
+        font-size: 30px;
+    }
+    .truck-size-box-price .truck-size-box-info{
+        padding: 24px;
+    }
+    .truck-size-box-price>div>div:last-child>ul li{
+        font-size: 28px;
+    }
+    .donation-content-rigth h4{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:1450px){
+    .logo-header{
+        width: 140px;
+    }
+    .header-nav{
+        gap: 40px;
+        justify-content: space-between;
+    }
+    .video-container{
+        padding: 60px 0;
+    }
+    .form-container{
+        background-size: 121%;
+        padding: 82px 0 163px;
+    }
+    .video-container>div{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .moving-process li p{
+        font-size: 20px;
+    }
+    .moving-process li img{
+        max-width: 60px;
+        display: block;
+    }
+    header{
+        padding: 40px 0;
+    }
+    .our-services-footer li{
+        height: 100px;
+    }
+    .reviews-block .swiper-pagination{
+        margin: 50px 0 160px;
+    }
+    .reviews-block .swiper-pagination-bullet{
+        width: 14px;
+        height: 14px;
+    }
+    .scroll-up{
+        width: 70px;
+        height: 70px;
+    }
+    .scroll-up svg{
+        width: 20px;
+        height: 12px;
+    }
+    .page .btn-form{
+        width: 140px;
+        font-size: 20px;
+        height: 60px;
+    }
+    .nav-links a{
+        font-size: 15px;
+    }
+    .services-item-content .num-tems{
+        font-size: 160px;
+    }
+    .services-item-content>div:not(:last-child){
+        margin: 0 0 60px;
+      }
+      .services-item-content h3{
+        font-size: 30px;
+      }
+    .aboute-us-content{
+        padding: 100px 0 120px;
+    }
+    .title-bg h2{
+        margin: 0 0 60px 20px;
+    }
+    .sub-title-items h4{
+        font-size: 30px;
+    }
+    .sub-title-items p{
+        font-size: 18px;
+    }
+    .services-item-content>div{
+        gap: 40px;
+    }
+    .donation-content-rigth p{
+        font-size: 20px;
+    }
+    .donation-content-left p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1300px){
+.artclose {
+    height: 34px;
+    width: 50px;
+      cursor: pointer;
+    }
+    .nav-links a{
+        font-size: 16px;
+    }
+.burgx, .burgx2, .burgx3 {
+      margin-top: 3px;
+      background: #fff;
+      width: 50px;
+      height: 4px;
+    position: absolute;
+      -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    }
+    
+.burgx2 {
+     margin-top: 14px;
+    }
+.burgx3 {
+      margin-top: 26px;
+      -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    }
+    .nav-items{
+        position: absolute;
+        top: calc(100% + 55px);
+        background: var(--black);
+        text-align: center;
+        box-sizing: border-box;
+        transition: all .6s linear;
+        max-width: 0;
+        overflow: hidden;
+        right: -30px;
+        
+        z-index: 2000;
+    }
+    .header-nav-bur{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .artclose{
+        display: flex;
+      }
+    h1{
+        width: 500px;
+        margin-left: 0;
+        position: absolute;
+        left: calc(50% - 250px);
+    }
+   .nav-links{
+        padding: 80px 46px;
+        width: 500px;
+        gap: 32px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .social-links{
+        display: none;
+    }
+    nav.show .nav-items{
+        right: -30px;
+        max-width: 500px;
+    }
+    nav.show {
+     position: relative;
+    }
+    .page .btn-form{
+        display: none;
+    }
+    .page h1{
+        display: block;
+    }
+    .specialized-item-content>div{
+        justify-content: center;
+    }
+    .truck-size-footer{
+        padding: 120px 0;
+    }
+    .donation-content-rigth h4{
+        font-size: 28px;
+        padding: 26px 31px 24px 32px;;
+        width: 104%;
+        margin: 0 0 46px -30px;
+    }
+    .donation-content-rigth p{
+        padding: 0 0 0 24px;
+        margin: 0 0 24px;
+    }
+    .donation-content-rigth>div{
+        padding: 0 0 0 17px;
+    }
+}
+@media screen and (max-width:1199px){
+    .logo-header{
+        max-width: 211px;
+    }
+    header{
+        padding: 38px 0 37px;
+    }
+    h1{
+        font-size: 32px;
+        position: relative;
+        left: auto;
+        margin: 0 auto;
+        width: auto;
+    }
+    .header-nav, .header-nav-bur{
+        gap: 75px;
+    }
+    .max-content-us{
+        padding: 240px 0 247px;
+    }
+    .max-content-us h2{
+        font-size: 64px;
+    }
+    .our-services{
+        padding-top: 99px;
+    }
+    .block-speed h2{
+        font-size: 48px;
+    }
+    .block-speed h2::before{
+        width: 93px;
+        height: 93px;
+    }
+    .our-services-select{
+        margin: 52px 0 72px;
+    }
+    .our-services>ul li{
+        width: 31%;
+    }
+    .our-services-footer ul{
+        margin: 68px 0 148px;
+        gap: 79px;
+    }
+    .our-services-select{
+        gap: 79px;
+    }
+    .our-services-footer li{
+        height: 90px;
+    }
+    .our-services-footer a{
+        max-width: 299px;
+        padding: 10px;
+    }
+    .truck-size-items .truck-size-box a{
+        font-size: 16px;
+        padding: 16px 24px 16px 36px;
+    }
+    .truck-size-items .truck-size-box a::after{
+        width: 20px;
+        height: 19px;
+    }
+    .truck-size-items>div:first-child{
+        gap: 16px;
+        margin: 0 0 17px;
+    }
+    .truck-size-items{
+        margin-bottom: 190px;
+    }
+    .reviews-block h2{
+        margin: 0 0 57px;
+    }
+    .reviews-block .swiper-pagination{
+        margin: 56px 0 84px;
+    }
+    .reviews-block .swiper-pagination-bullet{
+        width: 11.18px;
+        height: 11.18px;
+    }
+    .services-include ul{
+        margin: 85px 0 136px;
+    }
+    .services-include li div img{
+        width: 100%;
+        max-width: 100px;
+    }
+    .services-include h3{
+        margin: 30px auto 19px;
+        font-size: 16px;
+        width: 80%;
+
+    }
+    .services-include p{
+        font-size: 16px;
+    }
+    .services-include ul{
+        gap: 23px;
+    }
+    .video-container>div{
+        width: 90%;
+    }
+    .moving-process{
+        padding: 82px 0 76px;
+    }
+    .block-speed h2{
+        margin-left: 30px;
+    }
+    .moving-process ul{
+        margin-top: 73px;
+        gap: 23px 20px;
+    }
+    .moving-process li img{
+        max-width: 40px;
+    }
+    .moving-process li p{
+        font-size: 18px;
+    }
+    .moving-process li{
+        gap: 12px;
+    }
+    .form-container input{
+        margin: 0 0 15px;
+    }
+    .footer-content{
+        flex-wrap: wrap;
+    }
+    .footer-contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content{
+        justify-content: flex-start;
+        gap:41px 25px;
+    }
+    .footer-nav{
+        max-width: 64%;
+        gap:29px 16px ;
+    }
+    .footer-logo{
+        padding-right: 20px;
+    }
+    .services-items-content>div:first-child{
+        display: none;
+    }
+    .services-items-content{
+        display: block;
+    }
+    .sub-title-items{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .aboute-us-content{
+       padding: 86px 0 93px; 
+    }
+    .title-bg h2{
+        font-size: 48px;
+        margin: 0 0 52px 20px;
+    }
+    .title-bg h2::before {
+        width: 93px;
+        height: 93px;
+    }
+    .sub-title-items h4{
+        font-size: 32px;
+    }
+    .sub-title-items{
+        gap: 0;
+    }
+    .sub-title-items>li:nth-child(2){
+        margin: 31px 0 23px;
+    }
+    .sub-title-items p{
+        font-size: 20px;
+    }
+    .services-item-content .num-tems{
+        font-size: 250px;
+        line-height: 100%;
+        width: 158px;
+        min-width: 158px;
+    }
+    .services-item-content h3{
+        font-size: 32px;
+        padding: 0 0 15px;
+    }
+    .services-item-content>div:not(:last-child){
+        margin: 0 0 30px;
+    }
+    .photo-gallery>div:first-child{
+        display: block;
+    }
+    .photo-gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+    .photo-gallery div{
+        max-height: 275px;
+        overflow: hidden;
+    }
+    .photo-gallery img{
+        height: 100%;
+        max-width: 500px;
+        max-height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .truck-size-container{
+        padding: 87px 0 90px;
+    }
+    .truck-size-container h2{
+        margin-bottom: 70px;
+    }
+    .truck-size-box-info>span{
+        font-size: 40px;
+        padding: 45px 0 28px;
+    }
+    .truck-size-box-info>p{
+        font-size: 32px;
+    }
+    .truck-size-box-price .truck-size-box-info{
+        padding: 22px 24px 32px;
+    }
+    .truck-size-box-price>div>div:last-child>ul li{
+        font-size: 24px;
+    }
+    .truck-size-box-price>div>div:last-child{
+        padding: 34px 24px;
+    }
+    .truck-size-boxs>div:nth-child(2){
+        grid-template-columns: 60% 40%;
+    }
+    .truck-size-box img{
+        max-height: 500px;
+    }
+    .truck-size-boxs>div:first-child, .truck-size-boxs>div:last-child{
+        grid-template-columns:40% 60% ;
+    }
+    .truck-size-box-price .truck-size-box-info{
+        grid-template-columns: 1.5fr 1fr;
+    }
+    .truck-size-box-price>div>div:last-child{
+        grid-template-columns: 1.2fr 1fr;
+    }
+    .truck-size-for>p{
+        font-size: 20px;
+        margin: 0 0 16px;
+    }
+    .truck-size-for li{
+        font-size: 16px;
+    }
+    .specialized-container{
+        padding: 77px 0 73px;
+    }
+    .specialized-container h2{
+        margin-bottom: 90px;
+    }
+    .specialized-item-content>div{
+        gap: 50px;
+    }
+    .specialized-item-content h3{
+        font-size: 36px;
+    }
+    .truck-size-footer p{
+        font-size: 64px;
+        line-height: 130%;
+        max-width: 90%;
+    }
+    .donation-content-left p{
+        padding: 28px;
+    }
+    .donation-container{
+        padding: 87px 0 55px;
+    }
+    .donation-content-left p{
+        margin-top: 0;
+    }
+    .donation-content-left{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .donation-content-left>div{
+        padding-left: 0;
+    }
+    .donation-content{
+        align-items: stretch;
+    }
+    .donation-content-rigth>div{
+        max-height: 400px;
+    }
+    .donation-content-rigth{
+        display: flex;
+        flex-direction: column;
+    }
+    .donation-content-left>div{
+        height: 100%;
+    }
+    .donation-content-left img{
+        max-height: 900px;
+        height: 100%;
+        max-width: 500px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
