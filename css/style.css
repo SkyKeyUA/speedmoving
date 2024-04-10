@@ -398,6 +398,8 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap:49px 26px ;
+    position: relative;
+    z-index: -1;
 }
 .our-services-footer a{
     display: flex;
@@ -427,7 +429,7 @@ p{
 .our-services-select h5{
     color: var(--white);
     font-family: "Inter";
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 121%;
     text-align: left;
@@ -441,7 +443,7 @@ p{
     width: 97%;
     display: flex;
     align-items: center;
-    padding: 0 85px 0  58px;
+    padding: 0 85px 0  38px;
     justify-content: space-between;
     cursor: pointer;
     border-radius: 20px;
@@ -464,9 +466,9 @@ p{
      height: 113px;
      transition: all 0.3s ease-in-out;
     background: linear-gradient(87.49deg, rgb(136, 136, 136) 2.1%, rgb(40, 40, 40) 49.71%, rgb(136, 136, 136) 103.39%);
-    z-index: 201;
+    z-index: 300;
     transition: all .3s ease 0s;
-    width: 312px;
+    width: 100%;
 }
 .our-services-select>div>div::before {
         content: "";
@@ -484,6 +486,13 @@ p{
 .our-services-select>div>div:hover::before {
     -webkit-animation-play-state: running;
     animation-play-state: running;
+}
+.our-services-select>div:hover>div{
+ 
+  position: relative;
+}
+.our-services-select>div.hover>div{
+  z-index: 200;
 }
 .our-services-select h5::before{
     content: "";
@@ -509,7 +518,8 @@ p{
     width: 4px;
 }
 .our-services-select{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.2fr;
     gap: 77px;
     justify-content: center;
     margin: 90px 0 80px;
@@ -538,7 +548,9 @@ p{
 }
 .our-services-select ul{
     background: var(--white);
-    width: 312px;
+    width: 100%;
+    transition: all .2s linear;
+    max-height: 0;
 }
 .our-services-select ul li:last-child{
     padding-bottom: 36px;
@@ -555,8 +567,17 @@ p{
     overflow: hidden;
     transition: all 1s linear;
 }
+.our-services>ul li{
+  position: relative;
+  z-index: 1;
+}
+.our-services-select{
+  position: relative;
+  z-index: 1;
+}
 .our-services-select>div:hover ul{
-    max-height: 2000px;
+    max-height: 500px;
+    overflow-y: scroll;
 
 }
 .our-services-select>div{
@@ -873,7 +894,9 @@ padding-right: 30px;
     margin: 0 auto 40px;
   }
   .video-container img{
-    width: 100%;
+    width: 80%;
+    margin: 0 auto 20px;
+    display: block;
   }
   .video-container{
     background: url(../img/beautiful-landscape.webp) no-repeat ,rgba(0, 0, 0, 0.6);;
@@ -1192,20 +1215,21 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 51.5
     gap: 7px;
     background: rgba(20, 20, 20, 0.8);
     transition: all .3s linear;
-    animation: 0.2s tremor ease-out infinite;
+    animation: 0.5s tremor ease-out infinite;
     visibility: hidden;
+    transform: scale(1);
   }
   @keyframes tremor {
     0%, 25% {
         right: 40px;
-        transform: translate(-3%);
+        /* transform: translate(-3%); */
         transform: scale(1);
         box-shadow:0 2px 6px #69696912;
     }
-    50%, 100% {
+    50%, 90% {
         right: 40px;
-        transform: translate(3%);
-        /* transform: scale(1.06); */
+        /* transform: translate(3%); */
+        transform: scale(1.1);
         box-shadow:0 2px 10px #ffffff5c;
     }
 }

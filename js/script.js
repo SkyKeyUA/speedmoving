@@ -186,21 +186,32 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
-            document.body.classList.remove('hidden')
-
+            document.body.classList.remove('hidden');
+    
             navLinks.forEach(link => {
                 link.classList.remove('active-link');
                 document.body.classList.remove('hidden');
             });
-
+    
             this.classList.add('active-link');
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
             if (targetSection) {
-                targetSection.scrollIntoView({ behavior: 'smooth' });
+                const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({
+                    top: targetPosition - 100, 
+                    behavior: 'smooth'
+                });
+                if (window.innerWidth < 767){
+                    window.scrollTo({
+                        top: targetPosition - 60, 
+                        behavior: 'smooth'
+                    });  
+                }
             }
         });
     });
+    
 
     const homeLink = document.querySelector('.nav-links li a[href="/"]');
     if (homeLink) {

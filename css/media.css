@@ -24,11 +24,10 @@
     }
     .our-services-select>div>div{
         height: 101px;
-        width: 280px;
     }
-    .our-services-select ul{
+    /* .our-services-select ul{
         width: 280px;
-    }
+    } */
     .our-services>ul{
         display: flex;
         flex-wrap: wrap;
@@ -103,6 +102,10 @@
     .donation-content-rigth h4{
         font-size: 30px;
     }
+    .our-services-select{
+        gap: 50px;
+    }
+   
 }
 @media screen and (max-width:1450px){
     .logo-header{
@@ -186,6 +189,12 @@
     .services-item-content>div{
         gap: 40px;
     }
+    .our-services-select h5{
+        padding-right: 60px;
+    }
+    .our-services-select h5::before{
+        right: 20px;
+    }
     .donation-content-rigth p{
         font-size: 20px;
     }
@@ -196,6 +205,11 @@
         max-height: 300px;
         overflow-y: scroll;
         border-radius: 0 0 8px 8px;
+    }
+    .our-services-select{
+    }
+    .our-services-select h5{
+        font-size: 24px;
     }
 }
 
@@ -219,7 +233,9 @@
     -moz-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
     }
-    
+    .our-services-select{
+        gap: 30px;
+    }
 .burgx2 {
      margin-top: 14px;
     }
@@ -409,7 +425,20 @@
         gap: 79px;
     }
     .our-services-select{
-        gap: 79px;
+        gap: 20px;
+    }
+    .our-services-select ul li{
+        font-size: 18px;
+    }
+    .our-services-select h5{
+        font-size: 22px;
+        padding-left: 20px;
+        justify-content: center;
+    }
+    .our-services-select h5::after{
+        position: absolute;
+        top: 16px;
+        right: 60px;
     }
     .our-services-footer li{
         height: 90px;
@@ -671,6 +700,11 @@
     }
 }
 @media screen and (max-width: 992px){
+    .our-services-select h5{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 992px){
     .our-services>ul p{
         padding-top: 4px;
     }
@@ -713,6 +747,19 @@
     }
     .truck-size-box-price>div>div:last-child>ul li{
         font-size: 20px;
+    }
+    .our-services-select{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .our-services-select>div{
+        max-width: 260px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .video-container img{
+        width: 100%;
     }
 }
 @media screen and (max-width: 830px) {
@@ -918,6 +965,9 @@
         width: 90%;
         text-align: center;
         font-size: 22px;
+    }
+    .our-services-select{
+        justify-items: center;
     }
     .truck-size-items>div:nth-child(2){
         display: flex;
@@ -1170,6 +1220,12 @@
     .truck-size-boxs>div:last-child>div>div:last-child{
         border-left: 2px solid;
     }
+    .our-services-select>div>div{
+        z-index: -1;
+    }
+    .our-services-select>div.hover>div{
+        z-index: 300;
+    }
 }
 @media screen and (max-width: 575px) {
     .our-services>ul{
@@ -1180,7 +1236,7 @@
         width: 100%;
     }
     .our-services-select h5{
-        font-size: 22px;
+        font-size: 18px;
     }
     .title-bg h2{
         font-size: 32px;
@@ -1260,6 +1316,9 @@
     }
     .truck-size-footer p{
         font-size: 40px;
+    }
+    .our-services-select h5::after{
+        content: none;
     }
     .moving-process li img{
         max-width: 30px;
@@ -1371,5 +1430,11 @@
     }
     .truck-size-box-price .truck-size-box-info>p{
         text-align: center;
+    }
+}
+@media screen and (max-width: 360px) {
+    .our-services-select{
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
