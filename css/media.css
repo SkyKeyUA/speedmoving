@@ -85,9 +85,9 @@
         width: 90px;
         height: 90px;
     }
-    .page .nav-items{
+    /* .page .nav-items{
         top: calc(100% + 45px);
-    }
+    } */
     .truck-size-box-info>span{
         font-size: 50px;
     }
@@ -156,6 +156,9 @@
         font-size: 20px;
         height: 60px;
     }
+    .nav-links{
+        background: var(--black);
+    }
     .nav-links a{
         font-size: 15px;
     }
@@ -188,6 +191,11 @@
     }
     .donation-content-left p{
         font-size: 20px;
+    }
+    .our-services-select>div:hover ul{
+        max-height: 300px;
+        overflow-y: scroll;
+        border-radius: 0 0 8px 8px;
     }
 }
 
@@ -224,7 +232,7 @@
     }
     .nav-items{
         position: absolute;
-        top: calc(100% + 55px);
+        top:100%;
         background: var(--black);
         text-align: center;
         box-sizing: border-box;
@@ -232,7 +240,6 @@
         max-width: 0;
         overflow: hidden;
         right: -30px;
-        
         z-index: 2000;
     }
     .header-nav-bur{
@@ -252,6 +259,7 @@
    .nav-links{
         padding: 80px 46px;
         width: 500px;
+        
         gap: 32px;
         box-sizing: border-box;
         display: flex;
@@ -265,7 +273,7 @@
         max-width: 500px;
     }
     nav.show {
-     position: relative;
+     /* position: relative; */
     }
     .page .btn-form{
         display: none;
@@ -292,6 +300,70 @@
     .donation-content-rigth>div{
         padding: 0 0 0 17px;
     }
+    .truck-size-items>div:first-child, .truck-size-items>div:nth-child(2){
+        gap: 20px;
+        margin: 0 0 20px;
+    }
+    .truck-size-items>div:last-child{
+        gap:20px;
+        margin: 0;
+    }
+    .nav-links {
+        padding-top: 120px;
+    }
+    .nav-links {
+        width: 100vw;
+    }
+    nav.show .nav-items {
+        width: 100vw;
+        max-width: 100vw;
+    }
+    nav.show .nav-items {
+        right: 0;
+    }
+    .nav-items {
+        top: 100%;
+    }
+    nav .nav-items {
+        height: 100vh;
+        z-index: 200;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        right: 0;
+    }
+    .header-nav-bur {
+        flex-direction: column;
+        width: 100%;
+    }
+    .logo-header {
+        position: relative;
+        z-index: 201;
+    }
+    .artclose {
+        z-index: 2001;
+        position: sticky;
+        margin:20px 0 0  auto;
+
+    }
+    nav{
+        margin-left: auto;
+    }
+    /* .artclose{
+        margin-top: 10px;
+    } */
+    .container{
+        position: relative;
+        z-index: 1;
+    }
+    body.hidden {
+        overflow-y: hidden;
+    }
+    .nav-links{
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media screen and (max-width:1199px){
     .logo-header{
@@ -302,10 +374,10 @@
     }
     h1{
         font-size: 32px;
-        position: relative;
+        /* position: relative;
         left: auto;
         margin: 0 auto;
-        width: auto;
+        width: auto; */
     }
     .header-nav, .header-nav-bur{
         gap: 75px;
@@ -350,10 +422,7 @@
         font-size: 16px;
         padding: 16px 24px 16px 36px;
     }
-    .truck-size-items .truck-size-box a::after{
-        width: 20px;
-        height: 19px;
-    }
+
     .truck-size-items>div:first-child{
         gap: 16px;
         margin: 0 0 17px;
@@ -596,5 +665,711 @@
         max-width: 500px;
         object-fit: cover;
         object-position: center;
+    }
+    .our-services>ul p{
+        height: 90px;
+    }
+}
+@media screen and (max-width: 992px){
+    .our-services>ul p{
+        padding-top: 4px;
+    }
+    .truck-size-items>div h3{
+        margin: 0;
+        vertical-align: middle;
+        font-size: 24px;
+    }
+    .truck-size-box{
+        display: flex;
+        align-items: center;
+    }
+    .services-include ul{
+        grid-template-columns: 1fr 1fr;
+    }
+    .max-content-us h2{
+        font-size: 50px;
+        line-height: 130%;
+    }
+    .max-content-us h2::before{
+        bottom: -14px;
+    }
+    .title-bg h2{
+        font-size: 40px;
+    }
+    .truck-size-boxs>div:first-child, .truck-size-boxs>div:last-child{
+        grid-template-columns: 35% 65%;
+    }
+    .truck-size-box-info>span{
+        font-size: 34px;
+    }
+    .truck-size-box-info>p{
+        font-size: 24px;
+    }
+    .truck-size-box-price>div>div:last-child{
+        padding: 20px;
+    }
+    .truck-size-box{
+        align-items: stretch;
+    }
+    .truck-size-box-price>div>div:last-child>ul li{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .services-include ul{
+        grid-template-columns: 1fr 1fr;
+    }
+    .header-nav-bur{
+        flex-direction: column;
+        
+    }
+    .footer-logo{
+        max-width: 140px;
+    }
+    .logo-header{
+        position: absolute;
+        z-index: 201;
+    }
+    .header-nav-bur nav{
+        margin-left: auto;
+        margin-top: 20px;
+    }
+    nav .nav-items{
+        height: 100vh;
+       z-index: 200 ;
+       position: fixed;
+       bottom: 0;
+       top: 0;
+        right: 0;
+   }
+   h1{
+    position: relative;
+    left: auto;
+    margin: 0 auto;
+    width: auto;
+}
+    nav.show .nav-items{
+        width: 100vw;
+        max-width: 100vw;
+    }
+    .artclose{
+        margin-top: 5px;
+    }
+    body.hidden{
+        overflow-y: hidden;
+    }
+    h1{
+        /* z-index: 201; */
+    }
+    .header-nav, .header-nav-bur{
+       gap: 50px;
+    }
+    .nav-links{
+        width: 100vw;
+    }
+    .donation-content-left p{
+        z-index: 1;
+    }
+    .nav-links{
+        padding-top: 120px;
+    }
+    .nav-items{
+        top: 100%;
+    }
+    .artclose{
+        z-index: 2001;
+    position: sticky;
+    }
+    .page .header-nav{
+        width: 100%;
+        justify-content:end;
+    }
+    .page .logo-header{
+        top: 20px;
+        left: 20px;
+    }
+    .aboute-us-content{
+        padding: 80px 0 100px;
+    }
+     .page h1{
+        width: 90%;
+    }
+    .page .header-nav-bur{
+        width: 100%;
+    }
+    .our-services-select>div ul{
+        max-height: 0 ;
+    }
+    .our-services-select>div.hover ul{
+        max-height: 300px !important;
+    }
+    .our-services-select>div:hover ul {
+        max-height: 0 ;
+    }
+    .our-services-select>div:hover h5::before {
+        transform: rotate(0deg);
+    }
+    .our-services-select>div.hover h5::before {
+        transform: rotate(180deg);
+    }
+}
+@media screen and (max-width: 767px) {
+    .max-content-us{
+        padding: 120px 0;
+    }
+    .donation-content-rigth p{
+        padding-left: 0;
+    }
+    .max-content-us .about_us_box{
+        width: 100%;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    nav.show .nav-items{
+        right: 0;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .header-nav{
+        display: block;
+    }
+    .page .header-nav-bur{
+        gap: 46px;
+    }
+    header{
+        padding: 20px 0;
+    }
+    .logo-header{
+        width: 120px;
+        left: calc(50% - 60px);
+    }
+    .artclose{
+        width: 40px;
+    }
+    .page .header-nav-bur nav{
+        margin-top: 10px;
+    }
+    .burgx, .burgx2, .burgx3{
+        width: 40px;
+    }
+    .max-content-us h2{
+        font-size: 40px;
+        display: inline-block;
+    }
+    .our-services-select{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .our-services-select>div>div{
+        width: 100%;
+    }
+    .our-services-select ul{
+        width: 100%;
+    }
+    .block-speed h2{
+        font-size: 32px;
+    }
+    .block-speed h2::before{
+        width: 80px;
+        height: 80px;
+    }
+    .our-services-select h5{
+        font-size: 24px;
+    }
+    .our-services-select ul li{
+        font-size: 16px;
+    }
+    .our-services>ul li{
+        width: 48%;
+    }
+    .our-services-footer ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .our-services>ul{
+        gap: 20px;
+    }
+    .our-services-footer a{
+        width: 98%;
+        max-width: 100%;
+        font-size: 21px;
+    }
+    .our-services{
+        padding-top: 80px;
+    }
+    .our-services-footer ul{
+        margin: 60px 0 120px;
+    }
+    .truck-size-items .truck-size-box a{
+        position: relative;
+    }
+    .truck-size-box{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+    }
+    .truck-size-items>div:first-child, .truck-size-items>div:last-child{
+        grid-template-columns: 1fr 1fr;
+    }
+    .truck-size-items>div h3{
+        width: 90%;
+        text-align: center;
+        font-size: 22px;
+    }
+    .truck-size-items>div:nth-child(2){
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .truck-size-items>div:nth-child(2)>div{
+        width: 50%;
+    }
+    .truck-size-items>div:not(:first-child) h3{
+        padding: 0;
+    }
+    .truck-size-items{
+        margin: 0 0 120px;
+    }
+    .services-include ul{
+        grid-template-columns: 1fr;
+    }
+    .services-include ul li>div{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+    }
+    .services-include ul li{
+        position: relative;
+        padding-left: 110px;
+    }
+    .donation-content-left p{
+        padding: 16px;
+    }
+    .services-include h3{
+        margin : 0 0 20px;
+        text-align: left;
+    }
+    .services-include li p{
+        text-align: left;
+    }
+    .services-include li div img{
+        max-width: 80px;
+    }
+    .services-include ul li:not(:last-child){
+        margin: 0 0 30px;
+    }
+    .services-include li p{
+        font-size: 16px;
+    }
+    .video-content{
+        margin: 20px 0;
+    }
+    .moving-process{
+        padding: 80px 0;
+    }
+    .form-container>div>div, .form-pop-up>div{
+        padding:30px 20px; 
+    }
+    .form-container h2{
+        font-size: 28px;
+    }
+    .form-container>div>div, .form-pop-up>div{
+        max-width: 400px;
+    }
+    .select2-container{
+        width: 100% !important;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow b{
+        top: 13px;
+    }
+    .footer-logo{
+        order: 3;
+    }
+    .footer-contact{
+        order: 1;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
+    .footer-nav{
+        max-width: 100%;
+    }
+    footer{
+        padding: 40px 0 20px;
+    }
+    .footer-contact{
+        gap: 20px;
+    }
+    .footer-logo{
+        max-width: 160px;
+        padding: 0;
+    }
+    .footer-contact ul{
+        gap: 20px;
+    }
+    .footer-logo::after{
+        content: none;
+    }
+    .footer-contact>a{
+        font-size: 20px;
+        align-items: center;
+    }
+    .footer-contact>a svg{
+        width: 30px;
+        height: 20px;
+    }
+    .footer-contact ul svg{
+        width: 30px;
+        height: 30px;
+    }
+    .footer-contact a span{
+        line-height: 0;
+    }
+    .footer-nav a{
+        font-size: 18px;
+    }
+    .footer-contact>span{
+        position: absolute;
+        bottom: 0;
+    }
+    .footer-content{
+        position: relative;
+    }
+    .footer-content{
+        padding-bottom: 50px;
+        grid-area: 40px;
+    }
+    .our-services-select{
+        gap: 20px;
+    }
+    .our-services-footer ul{
+        gap: 20px;
+    }
+    .our-services-footer li{
+        width: 100%;
+    }
+    .block-speed h2::before, .block-speed h2::before{
+        top: -30px;
+        bottom: auto;
+        left: -20px;
+    }
+    .sub-title-items h4{
+        font-size: 24px;
+    }
+    .services-item-content .num-tems{
+        font-size: 150px;
+        width: 90px;
+        min-width: 90px;
+    }
+    .title-bg h2{
+        font-size: 40px;
+    }
+    .aboute-us-content{
+        padding-bottom: 80px;
+    }
+    .page .artclose{
+        margin-top: 10px;
+    }
+    .donation-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .donation-content-rigth>div{
+        max-height: 600px;
+    }
+    .donation-content-rigth h4{
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .donation-content-rigth>div{
+        order: -1;
+        width: 90%;
+        padding: 0;
+        margin: 0 auto 30px;
+    }
+    .donation-content-left>div{
+        max-width: 90%;
+        padding: 0;
+        margin: 40px auto 0;
+    }
+    .donation-content-rigth h4{
+        order: -2;
+    }
+    .donation-content-left{gap: 0;}
+    .truck-size-footer p{
+        font-size: 52px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .specialized-item-content h3{
+        font-size: 28px;
+    }
+    .services-item-content>div{
+        flex-direction: column;
+    }
+    .services-item-content>div:not(:last-child){
+        margin-bottom: 40px;
+    }
+    .specialized-container h2::before{
+        bottom: auto;
+        top: -15px;
+        width: 80px;
+    height: 80px;
+    }
+    .page .logo-header{
+        left: calc(50% - 60px);
+    }
+    .truck-size-boxs .truck-size-box{
+        display: flex !important; 
+        flex-direction: column;
+        gap: 0;
+    }
+    .truck-size-box-info, .truck-size-box-price>div{
+        width: 100%;
+    }
+    .truck-size-boxs>div:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .truck-size-box>div:first-child img{
+        max-width: 800px;
+        max-height: 500px;
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+    .truck-size-box>div{
+        width: 100%;
+    }
+    .truck-size-box-price .truck-size-box-info{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .truck-size-box-price>div>div:last-child{
+            border-left: 3px solid;
+        border-image: linear-gradient(180deg, #FFA500 0%, rgba(153, 99, 0, 0) 100%);
+        border-image-slice: 1;
+        border-radius: 8px 0 0 8px;
+    
+    }
+    .truck-size-boxs>div:nth-child(2)>div>div:last-child {
+        border-image: linear-gradient(183deg, #FFA500 0%, rgba(153, 99, 0, 0) 100%);
+        border-image-slice: 1;
+        border-radius: 8px 0 0 8px;
+    }
+    .truck-size-box-info>p{
+        border-image: linear-gradient(180deg, #FFA500 0%, rgba(153, 99, 0, 0) 100%);
+        border-image-slice: 2;
+        border-left: 2px solid;
+    }
+    .truck-size-boxs>div:last-child>div>div:last-child{
+        border-left: 2px solid;
+    }
+}
+@media screen and (max-width: 575px) {
+    .our-services>ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .our-services>ul li{
+        width: 100%;
+    }
+    .our-services-select h5{
+        font-size: 22px;
+    }
+    .title-bg h2{
+        font-size: 32px;
+    }
+    .truck-size-footer p{
+        font-size: 46px;
+    }
+    .our-services-select h5{
+        padding-left: 20px;
+         font-weight: 600;
+         height: 80px;
+    }
+    .our-services-select>div>div{
+        height: 84px;
+       
+    }
+    .our-services-select{
+        margin-bottom: 40px; 
+    }
+    .our-services-footer ul{
+        margin-top: 40px;
+    }
+    .sub-title-items h4{
+        text-align: center;
+    }
+    .sub-title-items>li:nth-child(2){
+        width: 100%;
+        text-align: center;
+    }
+    .services-item-content>div{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .services-item-content>div:not(:last-child){
+        margin: 0 0 40px;
+    }
+    .services-item-content h3{
+        font-size: 24px;
+        text-align: center;
+    }
+    .services-item-content h3::before{
+        width: 60%;
+    }
+    .sub-title-items h4{
+        font-size: 22px;
+    }
+    .sub-title-items p{
+        font-size: 18px;
+    }
+    .donation-content-rigth h4{
+        padding: 20px;
+        font-size: 24px;
+    }
+    .page h1{
+        width: 100%;
+    }
+   .truck-size-box-info>p{
+        font-size: 18px;
+    }
+    .truck-size-box-info>span{
+        padding-top: 20px;
+    }
+    .truck-size-box-info>span{
+        font-size: 26px;
+    }
+    .truck-size-box-price>div>div:last-child>ul li{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:460px) {
+    .moving-process ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .truck-size-footer p{
+        font-size: 40px;
+    }
+    .moving-process li img{
+        max-width: 30px;
+    }
+    .moving-process li {
+        position: relative;
+    }
+    .moving-process li:not(:last-child)::after{
+        position: absolute;
+        left: calc(50% - 10px);
+        bottom: -34px;
+        transform: rotate(90deg);
+    }
+    .block-speed h2{
+        font-size: 28px;
+    }
+    
+    .form-container form div, .form-pop-up form div{
+        grid-template-columns: 1fr;
+        margin: 0 0 15px;
+    }
+    .form-container form div>input, .form-pop-up form div>input{
+        margin: 0;
+    }
+    .form-container input, .form-pop-up input{
+        padding: 12px 20px;
+    }
+    .select2-container .select2-selection--single, .select2-container{
+        height: 42px;
+    }
+    .form-container form input[type='submit'], .form-pop-up input[type='submit']{
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+    .footer-nav a{
+        font-size: 16px;
+    }
+    .footer-nav{
+        gap: 20px;
+    }
+    .our-services>ul{
+        grid-template-columns: 1fr;
+    }
+    .our-services-select h5{
+        padding:0 40px 0 20px;
+        font-size: 18px;
+        height: 70px;
+    }
+    .our-services-select>div>div{
+        height: 74px;
+    }
+    .our-services-select h5::before{
+        right: 15px;
+    }
+    .our-services-footer ul{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        max-width: 90%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .our-services-footer a{
+        justify-content: center;
+        padding: 0 20px;
+    }
+    .truck-size-items>div:first-child, .truck-size-items>div:last-child{
+        flex-direction: column;
+        display: flex;
+    }
+    .truck-size-items>div:first-child, .truck-size-items>div:nth-child(2){
+        margin: 0 0  40px;
+    }
+    .truck-size-items>div .truck-size-box{
+        padding: 20px ;
+        margin-top: -3px;
+    }
+    .truck-size-items>div:nth-child(2){
+        flex-direction: column;
+
+    }
+    .truck-size-items>div:nth-child(2)>div{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .truck-size-item{
+        gap: 0 !important;
+    }
+    .header-nav-bur nav{
+        margin-top: 10px;
+    }
+    .photo-gallery{
+        grid-template-columns: 1fr;
+    }
+    .truck-size-footer p{
+        font-size: 34px;
+    }
+    .truck-size-box-price>div>div:last-child{
+        flex-direction: column;
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+    }
+    .truck-size-box-price .truck-size-box-info{
+        flex-direction: column-reverse;
+        display: flex;
+        gap: 10px;
+
+    }
+    .truck-size-box-price .truck-size-box-info>p{
+        text-align: center;
     }
 }
