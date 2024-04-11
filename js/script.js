@@ -16,6 +16,7 @@ $(document).ready(function() {
 if (document.querySelector('.reviewsSwiper')) {
     var swiper = new Swiper(".reviewsSwiper", {
         effect: "coverflow",
+        allowTouchMove: false,
         grabCursor: true,
         centeredSlides: true,
         loop: true,
@@ -181,7 +182,7 @@ window.addEventListener('scroll', handleScroll);
 
 // Активна кнопка меню
 document.addEventListener('DOMContentLoaded', function() {
-
+    const home = document.querySelector('.home')
     const navLinks = document.querySelectorAll('.nav-links li a');
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -192,22 +193,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 link.classList.remove('active-link');
                 document.body.classList.remove('hidden');
             });
-    
+            
             this.classList.add('active-link');
+            this.classList.remove('active-link');
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
             if (targetSection) {
                 const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY;
                 window.scrollTo({
-                    top: targetPosition - 100, 
+                    top: targetPosition - 0, 
                     behavior: 'smooth'
                 });
-                if (window.innerWidth < 767){
-                    window.scrollTo({
-                        top: targetPosition - 60, 
-                        behavior: 'smooth'
-                    });  
-                }
+                // if (window.innerWidth < 767){
+                //     window.scrollTo({
+                //         top: targetPosition - 60, 
+                //         behavior: 'smooth'
+                //     });  
+                //}
             }
         });
     });
