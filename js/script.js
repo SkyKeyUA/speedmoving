@@ -4,6 +4,7 @@ if (btnSocia) {
     btnSocia.addEventListener('click', (e) => {
         e.preventDefault();
         navSocia.classList.toggle('hidden');
+        
     });
 }
 
@@ -20,7 +21,7 @@ if (document.querySelector('.reviewsSwiper')) {
         grabCursor: true,
         centeredSlides: true,
         loop: true,
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: -140,
         coverflowEffect: {
             rotate: 0,
@@ -46,6 +47,9 @@ if (document.querySelector('.reviewsSwiper')) {
             clickable: true
         },
         breakpoints: {
+            575:{
+                slidesPerView: 2,
+            },
             870: {
                 spaceBetween: -200,
                 slidesPerView: 4,
@@ -84,6 +88,7 @@ const navBar = document.querySelector('.header-nav-bur nav')
 document.querySelector('.artclose').addEventListener('click', () => {
     navBar.classList.toggle('show');
     document.body.classList.toggle('hidden');
+    document.body.classList.toggle('overlay')
 });
 
 if (window.innerWidth < 1300) {
@@ -93,6 +98,7 @@ if (window.innerWidth < 1300) {
             e.preventDefault();
             navBar.classList.remove('show');
             document.body.classList.remove('hidden'); //
+            document.body.classList.remove('overlay')
             $('.burgx3').stop().transition({ rotate: "+=135", "margin-top": "3px" });
             $('.burgx2').transition({ opacity: "1" }, "fast");
             $('.burgx').stop().transition({ rotate: "-=135", "margin-top": "26px" });
