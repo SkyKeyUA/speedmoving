@@ -485,7 +485,7 @@ p{
      height: 113px;
      transition: all 0.3s ease-in-out;
     background: linear-gradient(87.49deg, rgb(136, 136, 136) 2.1%, rgb(40, 40, 40) 49.71%, rgb(136, 136, 136) 103.39%);
-    z-index: 300;
+    z-index: 1;
     transition: all .3s ease 0s;
     width: 100%;
 }
@@ -497,14 +497,19 @@ p{
         animation: raninr 3s linear infinite;
         -webkit-animation-play-state: paused;
         animation-play-state: paused;
-        top: -161%;
-        left: -3%;
-        width: 106%;
-        height: 437%;
+        
 }
 .our-services-select>div>div:hover::before {
     -webkit-animation-play-state: running;
     animation-play-state: running;
+    top: -161%;
+        left: -3%;
+        width: 106%;
+        height: 437%;
+}
+.our-services-select>div>div.hover::before{
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
 }
 .our-services-select>div:hover>div{
  
@@ -580,7 +585,7 @@ p{
 .our-services-select ul{
     position: absolute;
     z-index: 60;
-    top: 87%;
+    top: 90%;
     max-height: 0px;
     z-index: 200;
     overflow: hidden;
@@ -638,8 +643,8 @@ p{
     background: conic-gradient(rgb(121 121 121) 0, rgb(50 50 50) 8%, rgb(92 92 92) 25%, rgb(40, 40, 40) 45%, rgb(136, 136, 136) 60%, rgb(136, 136, 136) 70%, rgb(115 115 115) 100%);
     -webkit-animation: raninr 3s linear infinite;
     animation: raninr 3s linear infinite;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
     top: -161%;
     left: -3%;
     width: 106%;
@@ -656,10 +661,10 @@ p{
 .our-services-footer li:hover{
     transform: translateY(-2px);
 }
-.our-services-footer li:hover::before{
+/* .our-services-footer li:hover::before{
     -webkit-animation-play-state: running;
     animation-play-state: running;
-}
+} */
 .truck-size h2{
     margin: 0 0 112px;
 }
@@ -813,7 +818,7 @@ padding-right: 30px;
     content: "";
     inset: 0;
     width: 100%;
-
+    transition: all .1s linear;
     aspect-ratio: 1/1;
     background: rgba(68, 64, 64, 0.4);
   }
@@ -1234,22 +1239,23 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 51.5
     gap: 7px;
     background: rgba(20, 20, 20, 0.8);
     transition: all .3s linear;
-    animation: 0.5s tremor ease-out infinite;
+    /* animation: 2s tremor ease-out infinite; */
     visibility: hidden;
-    transform: scale(1);
+     box-shadow:0 2px 10px #ffffff5c;
+    /* transform: scale(1); */
   }
   @keyframes tremor {
     0%, 25% {
         right: 40px;
-        /* transform: translate(-3%); */
-        transform: scale(1);
+        /* transform: translate(-3%); 
+        transform: scale(1);*/
         box-shadow:0 2px 6px #69696912;
     }
-    50%, 90% {
+    50%, 100% {
         right: 40px;
-        /* transform: translate(3%); */
-        transform: scale(1.1);
-        box-shadow:0 2px 10px #ffffff5c;
+        /* transform: translate(3%);
+        transform: scale(1.1); */
+       
     }
 }
   .scroll-up p{
@@ -1297,7 +1303,11 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 51.5
     box-shadow: 0 2px 5px #930307;
   }
   .page h1{
-    display: none;
+    /* display: none; */
+    margin: 30px 0 0;
+  }
+  .page .nav-links{
+    padding-top: 20px;
   }
   .page .header-nav{
     gap: 20px;

@@ -37,13 +37,12 @@
         width: 23%;
     }
     .truck-size-items>div h3{
-        font-size: 37.04px;
+        font-size: 56.04px;
         padding: 17px 17px 17px 28px;
-        max-width: 400px;
-    }
-    .truck-size-items>div h3{
+        max-width: 600px;
         margin-top: 70px;
     }
+    
     .services-include li div img{
         width: 30%;
         display: block;
@@ -105,7 +104,9 @@
     .our-services-select{
         gap: 50px;
     }
-   
+    .nav-links a{
+        font-size: 14px;
+    }
 }
 @media screen and (max-width:1450px){
     .logo-header{
@@ -212,7 +213,17 @@
         font-size: 24px;
     }
 }
-
+@media screen and (max-width: 1370px) {
+   .page .nav-links{
+        gap: 20px;
+    }
+    .truck-size-items>div h3{
+        font-size: 46.04px;
+        padding: 17px 17px 17px 28px;
+        max-width: 600px;
+        margin-top: 70px;
+    }
+}
 @media screen and (max-width:1300px){
 .artclose {
     height: 34px;
@@ -296,6 +307,7 @@
     }
     .page h1{
         display: block;
+        margin: 0;
     }
     .specialized-item-content>div{
         justify-content: center;
@@ -397,6 +409,12 @@
     }
     .header-nav, .header-nav-bur{
         gap: 75px;
+    }
+    .truck-size-items>div h3{
+        font-size: 36.04px;
+        padding: 17px 17px 17px 28px;
+        max-width: 600px;
+        margin-top: 56px;
     }
     .max-content-us{
         padding: 240px 0 247px;
@@ -745,9 +763,9 @@
     .truck-size-box-price>div>div:last-child{
         padding: 20px;
     }
-    .truck-size-box{
+    /* .truck-size-box{
         align-items: stretch;
-    }
+    } */
     .truck-size-box-price>div>div:last-child>ul li{
         font-size: 20px;
     }
@@ -776,6 +794,9 @@
     .header-nav-bur{
         flex-direction: column;
         
+    }
+    .truck-size-items>div h3{
+        margin:-16px 0 0;
     }
     .footer-logo{
         max-width: 140px;
@@ -870,6 +891,9 @@
 @media screen and (max-width: 767px) {
     .max-content-us{
         padding: 120px 0;
+    }
+    .truck-size-items>div h3{
+        margin: 0;
     }
     .donation-content-rigth p{
         padding-left: 0;
@@ -985,6 +1009,17 @@
     }
     .truck-size-items>div:not(:first-child) h3{
         padding: 0;
+    }
+    .our-services-select>div.hover>div::before{
+        -webkit-animation-play-state: running;
+        animation-play-state: running;
+        top: -161%;
+        left: -3%;
+        width: 106%;
+        height: 437%;
+    }
+    .our-services-select>div>div:hover::before{
+        animation-play-state:paused;
     }
     .truck-size-items{
         margin: 0 0 120px;
@@ -1183,6 +1218,7 @@
     }
     .page .logo-header{
         left: calc(50% - 60px);
+        top: 10px;
     }
     .truck-size-boxs .truck-size-box{
         display: flex !important; 

@@ -16,7 +16,7 @@ $(document).ready(function() {
 if (document.querySelector('.reviewsSwiper')) {
     var swiper = new Swiper(".reviewsSwiper", {
         effect: "coverflow",
-        allowTouchMove: false,
+        // allowTouchMove: false,
         grabCursor: true,
         centeredSlides: true,
         loop: true,
@@ -229,3 +229,4 @@ selectDiv.forEach(item => {
 })
 });
 }
+
