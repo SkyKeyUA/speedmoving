@@ -226,13 +226,28 @@ document.addEventListener('DOMContentLoaded', function() {
         homeLink.classList.add('active-link');
     }
 });
-if (window.innerWidth < 768){
-  const selectDiv = document.querySelectorAll('.our-services-select>div');
+if (window.innerWidth < 768) {
+    const selectDiv = document.querySelectorAll('.our-services-select>div');
 
-selectDiv.forEach(item => {
-  item.addEventListener('click', function() {
-    this.classList.toggle('hover');
-})
-});
+    selectDiv.forEach(item => {
+        item.addEventListener('click', function() {
+            const currentTime = new Date().getTime();
+            this.dataset.lastClickTime = currentTime;
+            this.classList.toggle('hover');
+        });
+    });
+
+    document.addEventListener('click', function(event) {
+        const currentTime = new Date().getTime();
+        const hoverElements = document.querySelectorAll('.our-services-select>div.hover');
+
+        hoverElements.forEach(headerList => {
+            const lastClickTime = parseInt(headerList.dataset.lastClickTime || 0);
+            if (currentTime - lastClickTime >= 1000 && !event.target.closest('.our-services-select ul') && !event.target.closest('.our-services-select h5')) {
+                headerList.classList.remove('hover');
+            }
+        });
+    });
 }
+
 
